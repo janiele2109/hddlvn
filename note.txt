@@ -1,0 +1,31 @@
+Port from remote web server to localhost
+
+1. Add the following line:
+
+	DROP DATABASE IF EXISTS `hddlvn`;
+
+2. Change DB name:
+
+	From
+		vanphon2_wp333
+	to
+		hddlvn
+		
+3. Change domain:
+
+	From 
+		huongdandulichvietnam.com 
+	to 
+		hddlvn.com
+
+	Except:
+
+		"info@huongdandulichvietnam.com" at entry "(833, 'theme_mods_vogue',..." table "wpwn_options"
+
+
+4. Change dir:
+
+	From 
+		/home/vanphon2/public_html/hddlvn.com/
+	to
+		C:\wamp64\www\hddlvn\
