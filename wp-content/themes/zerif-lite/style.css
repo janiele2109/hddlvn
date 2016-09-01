@@ -1486,13 +1486,7 @@ object {
 	padding-right: 5px;
 }
 .navbar-inverse .navbar-nav >li:hover {
-	-moz-border-radius-topleft: 6px;
-	-moz-border-radius-topright: 6px;
-	-moz-border-radius-bottomright: 6px;
-	-moz-border-radius-bottomleft: 6px;
-	-webkit-border-radius: 6px 6px 6px 6px;
-	border-radius: 6px 6px 6px 6px;	
-	background-color: #34D293;
+    border-top: 2px solid #E96656;
 }
 .navbar-inverse .navbar-nav>li:last-child {
 	margin-right: 0 !important;
@@ -1631,7 +1625,6 @@ object {
 }
 .navbar-inverse .navbar-nav>li>a:hover,
 .navbar-inverse .navbar-nav>li>a:focus {
-	color: white;
 }
 .navbar-inverse .navbar-nav>li.current>a {
 	color: #e96656;
@@ -1703,7 +1696,7 @@ ul.nav > li.current_page_item.current > a:before {
 	color: #FFF;
 	line-height: 65px;
 	z-index: 0;
-	font-size: 90px;
+	font-size: 80px;
 	float:none;
 }
 /* Xuyen - ADD - START */
@@ -5740,6 +5733,7 @@ body.home.page {
 body.custom-background {
 	background-position: top center !important;
 	background-attachment: fixed !important;
+	background-size: 100% 100%;
 }
 
 .zerif_team:nth-child(4n+1), .our-team .col-lg-3:nth-child(4n+1) {
