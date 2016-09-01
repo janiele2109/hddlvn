@@ -16,6 +16,8 @@ Tags: one-column, two-columns, right-sidebar,front-page-post-form,full-width-tem
 /*--------------------------------------------------------------
 1.0 - Reset
 --------------------------------------------------------------*/
+@import 'https://fonts.googleapis.com/css?family=Lobster';
+
 html {
 	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
 	overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
@@ -1682,12 +1684,12 @@ ul.nav > li.current_page_item.current > a:before {
 	float:none;
 }
 .intro-text{
+	font-family: 'Lobster', cursive;
 	text-align: center;
 	color: #FFF;
 	line-height: 65px;
 	z-index: 0;
-	text-transform: uppercase;
-	font-size: 55px;
+	font-size: 100px;
 	float:none;
 }
 /* Short Messages */
@@ -6367,3 +6369,19 @@ body.custom-background {
 	}
 
 }
+
+/* Xuyen - ADD - START */
+ul#menu-vi_menu > li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.1s, 0.1s;
+}
+
+ul#menu-vi_menu li ul {
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity, visibility;
+    transition-duration: .4s, 0s;
+    transition-delay: 0s, .4s;
+}
+/* Xuyen - ADD - END */
