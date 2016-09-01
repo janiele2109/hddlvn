@@ -588,7 +588,19 @@ function zerif_customize_register( $wp_customize ) {
 			'section'  => 'zerif_bigtitle_section',
 			'priority'    => 2,
 		));
+		/* Xuyen - ADD - START */
+		$wp_customize->add_setting( 'janie_slogan_text', array(
+			'sanitize_callback' => 'zerif_sanitize_input',
+			'default' => __('Enjoy wonderful and impressive experiences','janie'),
+			'transport' => 'postMessage'
+		));
 
+		$wp_customize->add_control( 'janie_slogan_text', array(
+			'label'    => __( 'Slogan', 'janie' ),
+			'section'  => 'zerif_bigtitle_section',
+			'priority'    => 3,
+		));
+		/* Xuyen - ADD - END */
 		/* red button */
 		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_label', array(
 			'sanitize_callback' => 'zerif_sanitize_input',
@@ -599,7 +611,7 @@ function zerif_customize_register( $wp_customize ) {
 		$wp_customize->add_control( 'zerif_bigtitle_redbutton_label', array(
 			'label'    => __( 'Red button label', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
-			'priority'    => 3,
+			'priority'    => 4,
 		));
 
 		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_url', array(
@@ -611,7 +623,7 @@ function zerif_customize_register( $wp_customize ) {
 		$wp_customize->add_control( 'zerif_bigtitle_redbutton_url', array(
 			'label'    => __( 'Red button link', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
-			'priority'    => 4,
+			'priority'    => 5,
 		));
 
 		/* green button */
@@ -624,7 +636,7 @@ function zerif_customize_register( $wp_customize ) {
 		$wp_customize->add_control( 'zerif_bigtitle_greenbutton_label', array(
 			'label'    => __( 'Green button label', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
-			'priority'    => 5,
+			'priority'    => 6,
 		));
 
 		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_url', array(
@@ -636,7 +648,7 @@ function zerif_customize_register( $wp_customize ) {
 		$wp_customize->add_control( 'zerif_bigtitle_greenbutton_url', array(
 			'label'    => __( 'Green button link', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
-			'priority'    => 6,
+			'priority'    => 7,
 		));
 
 		/****************************************************/
@@ -737,7 +749,19 @@ function zerif_customize_register( $wp_customize ) {
 			'section'  => 'zerif_bigtitle_section',
 			'priority'    => 2,
 		));
+		/* Xuyen - ADD - START */
+		$wp_customize->add_setting( 'janie_slogan_text', array(
+			'sanitize_callback' => 'zerif_sanitize_input',
+			'default' => __('Enjoy wonderful and impressive experiences','janie'),
+			'transport' => 'postMessage'
+		));
 
+		$wp_customize->add_control( 'janie_slogan_text', array(
+			'label'    => __( 'Slogan', 'janie' ),
+			'section'  => 'zerif_bigtitle_section',
+			'priority'    => 3,
+		));
+		/* Xuyen - ADD - END */
 		/* red button */
 		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_label', array(
 			'sanitize_callback' => 'zerif_sanitize_input',

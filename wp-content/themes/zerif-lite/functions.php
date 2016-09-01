@@ -151,6 +151,10 @@ function zerif_setup() {
 
 	add_action( 'zerif_big_title_text', 'zerif_big_title_text_function' ); #Outputs the text in Big title section
 
+    /* Xuyen - ADD - START */
+    add_action( 'janie_slogan_text_action', 'janie_slogan_text_function' ); #Outputs the Slogan text in Big title section
+    /* Xuyen - ADD - END */
+
 	add_action( 'zerif_about_us_header_title', 'zerif_about_us_header_title_function' ); #Outputs the title in About us section
 	add_action( 'zerif_about_us_header_subtitle', 'zerif_about_us_header_subtitle_function' ); #Outputs the subtitle in About us section
 

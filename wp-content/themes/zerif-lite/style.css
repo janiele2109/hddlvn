@@ -16,7 +16,7 @@ Tags: one-column, two-columns, right-sidebar,front-page-post-form,full-width-tem
 /*--------------------------------------------------------------
 1.0 - Reset
 --------------------------------------------------------------*/
-@import 'https://fonts.googleapis.com/css?family=Lobster';
+@import 'https://fonts.googleapis.com/css?family=Lobster|Sriracha';
 
 html {
 	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
@@ -149,8 +149,8 @@ padding-left: 0 !important;
 }
 a {
 	color: #e96656;
-	-webkit-transition: all 700ms;
-	transition: all 700ms;
+	-webkit-transition: all 200ms;
+	transition: all 200ms;
 }
 a,a:hover {
 	text-decoration: none;
@@ -1427,7 +1427,7 @@ object {
 	position: relative;
 	-webkit-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
 	box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
-	padding: 285px 0 210px;
+	padding: 230px 0 210px;
 }
 .header_title {
     float: left;
@@ -1482,6 +1482,17 @@ object {
 	display: inline;
 	margin-right: 20px;
 	margin-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.navbar-inverse .navbar-nav >li:hover {
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	-webkit-border-radius: 6px 6px 6px 6px;
+	border-radius: 6px 6px 6px 6px;	
+	background-color: #34D293;
 }
 .navbar-inverse .navbar-nav>li:last-child {
 	margin-right: 0 !important;
@@ -1512,6 +1523,9 @@ object {
 	box-shadow: 3px 3px 2px rgba(50, 50, 50, 0.08);
 	z-index: 9999;
 }
+.navbar-inverse .navbar-nav ul.sub-menu li:hover {
+	background-color: #E96656;
+}
 .navbar-inverse .navbar-nav ul.sub-menu {
 	margin:0;
 }
@@ -1530,7 +1544,7 @@ object {
 }
 .navbar-inverse .navbar-nav ul.sub-menu li:hover > a,
 .navbar-inverse .navbar-nav ul.sub-menu li.link-focus > a {
-	color:#e96656;
+	color:white;
 }
 .navbar-inverse ul ul {
 	left: -999em;
@@ -1617,7 +1631,7 @@ object {
 }
 .navbar-inverse .navbar-nav>li>a:hover,
 .navbar-inverse .navbar-nav>li>a:focus {
-	color: #e96656;
+	color: white;
 }
 .navbar-inverse .navbar-nav>li.current>a {
 	color: #e96656;
@@ -1689,9 +1703,20 @@ ul.nav > li.current_page_item.current > a:before {
 	color: #FFF;
 	line-height: 65px;
 	z-index: 0;
-	font-size: 100px;
+	font-size: 90px;
 	float:none;
 }
+/* Xuyen - ADD - START */
+.janie-slogan-text{
+	font-family: 'Sriracha', cursive;
+	text-align: center;
+	color: #FFF;
+	line-height: 65px;
+	z-index: 0;
+	font-size: 30px;
+	float:none;
+}
+/* Xuyen - ADD - END */
 /* Short Messages */
 .bottom-message-section {
 	margin-top: 14%;

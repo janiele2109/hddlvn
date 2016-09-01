@@ -396,6 +396,23 @@ function zerif_big_title_text_function() {
 	endif;
 }
 
+// Xuyen - ADD - START
+function janie_slogan_text_function() {
+
+	$janie_slogan_text = get_theme_mod('janie_slogan_text',__('Enjoy wonderful and impressive experiences','janie'));
+
+	if( !empty($janie_slogan_text) ):
+
+		echo '<span class="janie-slogan-text">'.wp_kses_post( $janie_slogan_text ).'</span>';
+
+	elseif ( is_customize_preview() ):
+
+		echo '<span class="janie-slogan-text janie_hidden_if_not_customizer"></span>';
+
+	endif;
+}
+// Xuyen - ADD - END
+
 function zerif_about_us_header_title_function() {
 	$zerif_aboutus_title = get_theme_mod('zerif_aboutus_title',__('About','zerif-lite'));
 

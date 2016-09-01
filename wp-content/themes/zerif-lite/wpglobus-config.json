@@ -21,6 +21,9 @@
       "zerif_bigtitle_title": {
         "type": "text"
       },
+      "janie_slogan_text": {
+        "type": "text"
+      },
       "zerif_bigtitle_redbutton_label": {
         "type": "text"
       },

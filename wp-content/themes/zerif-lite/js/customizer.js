@@ -101,6 +101,21 @@
 		} );
 	} );
 	
+	// Xuyen - ADD - START
+	/* janie_slogan_text */
+	wp.customize( 'janie_slogan_text', function( value ) {
+		value.bind( function( to ) {
+			if( to != '' ) {
+				$( '.header-content-wrap janie-slogan-text' ).removeClass( 'zerif_hidden_if_not_customizer' );
+			}
+			else {
+				$( '.header-content-wrap janie-slogan-text' ).addClass( 'zerif_hidden_if_not_customizer' );
+			}
+			$( '.header-content-wrap janie-slogan-text' ).html( to );
+		} );
+	} );
+	// Xuyen - ADD - END
+
 	/* zerif_bigtitle_redbutton_label */
 	wp.customize( 'zerif_bigtitle_redbutton_label', function( value ) {
 		value.bind( function( to ) {
