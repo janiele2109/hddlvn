@@ -16,7 +16,7 @@ Tags: one-column, two-columns, right-sidebar,front-page-post-form,full-width-tem
 /*--------------------------------------------------------------
 1.0 - Reset
 --------------------------------------------------------------*/
-@import 'https://fonts.googleapis.com/css?family=Lobster|Sriracha';
+@import 'https://fonts.googleapis.com/css?family=Lobster|Sriracha|Farsan|Arima+Madurai|Cormorant+Upright|Pridi';
 
 html {
 	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
@@ -465,9 +465,11 @@ thead th{
 }
 .dark-text {
 	color: #404040;
+	font-family: 'Sriracha', cursive;	
 }
 .white-text {
 	color: #FFFFFF;
+	font-family: 'Sriracha', cursive;
 }
 /*---------------------------------------
  **   BORDER BOTTOMS                 -----
@@ -502,7 +504,7 @@ thead th{
 	width: 75%;
 	height: 2px;
 	background: #e96656;
-	bottom: -9px;
+	bottom: -5px;
 	left: 12.5%;
 }
 .green-border-bottom:before {
@@ -1373,8 +1375,9 @@ object {
 .section-header .section-legend {
 	font-size: 16px;
 	margin-bottom: 0;
-	color: #808080;
 	padding-top: 0;
+	font-family: 'Sriracha', cursive;
+	color: #FFFFFF;
 }
 /* PRE LOADER */
 .preloader {
@@ -1625,6 +1628,7 @@ object {
 }
 .navbar-inverse .navbar-nav>li>a:hover,
 .navbar-inverse .navbar-nav>li>a:focus {
+	color: #E96656;
 }
 .navbar-inverse .navbar-nav>li.current>a {
 	color: #e96656;
@@ -1725,7 +1729,7 @@ ul.nav > li.current_page_item.current > a:before {
 .latest-news {
 	padding-bottom: 66px;
 	padding-top: 100px;
-	background: #FFFFFF;
+	background: #272727;
 }
 .carousel-inner {
 /*	margin: 0 30px; */
@@ -1737,7 +1741,7 @@ ul.nav > li.current_page_item.current > a:before {
 .latesnews-content {
 	font-size: 14px;
 	line-height: 18px;
-	color: #777777;
+	color: #FFFFFF;
 }
 #carousel-homepage-latestnews .carousel-inner .item .latestnews-title {
 	margin-bottom: 15px;
@@ -1754,7 +1758,7 @@ ul.nav > li.current_page_item.current > a:before {
 }
 #carousel-homepage-latestnews .carousel-inner .item .latestnews-title a {
 	text-transform: uppercase;
-	color: #404040;
+	color: #8AFF96;
 	font-weight: 700;
 	display: block;
 }
@@ -1783,6 +1787,11 @@ ul.nav > li.current_page_item.current > a:before {
 }
 #carousel-homepage-latestnews .item .latestnews-box .latestnews-img .latestnews-img-a {
 	display:block;
+}
+#carousel-homepage-latestnews .item .latestnews-box .latestnews-img .latestnews-img-a img {
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
 }
 #carousel-homepage-latestnews {
 	margin: 0 30px;
@@ -1817,6 +1826,10 @@ ul.nav > li.current_page_item.current > a:before {
 /*---------------------------------------
  **   Section: Our focus             -----
 -----------------------------------------*/
+.focus .section-legend {
+	color: #404040;
+}
+
 .focus-box .service-icon .pixeden  {
 	border-radius: 50%;
 }
@@ -2218,8 +2231,8 @@ width: -webkit-calc(100% / 4);
  **   Section: About us;              -----
 -----------------------------------------*/
 .about-us {
-	background: #272727;
-	color: #FFF;
+	background: #FFFFFF;
+	color: #808080;
 }
 .about-us .big-intro {
 	text-align: right;
@@ -2227,15 +2240,17 @@ width: -webkit-calc(100% / 4);
 	font-size: 60px;
 	line-height: normal;
 	margin-top: -15px;
+	font-family: 'Cormorant Upright', serif;
 }
 .about-us .section-header .section-legend {
-	color: #FFF;
+	color: #404040;
 }
 .about-us p {
 	text-align: left;
-	color: #939393;
-	font-size: 14px;
+	color: #BF5555;
+	font-size: 16px;
 	line-height: 25px;
+	font-family: 'Arima Madurai', cursive;
 }
 .about-us .column {
 	margin-bottom: 78px;
@@ -2267,21 +2282,23 @@ width: -webkit-calc(100% / 4);
 	margin-bottom: 0;
 }
 .skills .skill .skill1,.skill2,.skill3,.skill4 {
-	font-size: 16px !important;
+	color: #404040 !important; 
+	font-size:20px !important;
 }
 .skills .skill .section-legend {
-	text-transform: uppercase;
-	font-weight: 700;
 	clear: none;
 	width: auto;
 	float: none;
 	margin-top: 0;
 	margin-bottom: 0;
+	font-size: 15px;
+	padding-top:10px;
+	font-family: 'Pridi', serif;
 }
 .skills .skill p {
 	line-height: 20px;
 	font-size: 14px;
-	color: #8f8f8f;
+	color: #ffffff;
 }
 /*--OUR CLIENTS --*/
 .our-clients {
@@ -2398,7 +2415,7 @@ width: -webkit-calc(100% / 4);
 .our-team {
 	padding-bottom: 66px;
 	padding-top: 100px;
-	background: #FFFFFF;
+	background: #000000;
 }
 .team-member {
 	border-radius: 4px;
@@ -2415,7 +2432,7 @@ width: -webkit-calc(100% / 4);
 	top: -200px;
 	left: 0;
 	width: 100%;
-	height: 190px;
+	height: 210px;
 	-webkit-transition: all 500ms;
 	transition: all 500ms;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -2462,14 +2479,17 @@ width: -webkit-calc(100% / 4);
 }
 .team-member h3 {
 	text-transform: uppercase;
-	color: #404040;
+	color: #FFFFFF;
 	font-weight: 700;
-	font-size: 17px;
+	font-size: 25px;
+	font-family: 'Farsan', cursive;
+	font-style: italic;
 	position: relative;
 	margin-top: 15px;
 }
 .team-member .position {
-	font-size: 13px;
+	font-size: 15px;
+	color: #FFFFFF;
 }
 .team-member .social-icons {
 	margin-bottom: 25px;
@@ -2963,9 +2983,11 @@ width: -webkit-calc(100% / 4);
 }
 .contact-us .error p {
 	background: #E96656;
+	font-family: Arial;
 }
 .contact-us .success p {
 	background: #34d293;
+	font-family: Arial;
 }
 .contact_submit_wrap {
 	float: right;

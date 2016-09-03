@@ -667,6 +667,10 @@ msgstr ""
 msgid "Facebook link"
 msgstr ""
 
+#: functions.php:9035
+msgid "Google Plus link"
+msgstr ""
+
 #: functions.php:1040
 msgid "Twitter link"
 msgstr ""

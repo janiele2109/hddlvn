@@ -30,6 +30,7 @@
 			$zerif_phone_icon = get_theme_mod('zerif_phone_icon',get_template_directory_uri().'/images/telephone65-blue.png');
 
 			$zerif_socials_facebook = get_theme_mod('zerif_socials_facebook','#');
+			$zerif_socials_googleplus = get_theme_mod('zerif_socials_googleplus','#');
 			$zerif_socials_twitter = get_theme_mod('zerif_socials_twitter','#');
 			$zerif_socials_linkedin = get_theme_mod('zerif_socials_linkedin','#');
 			$zerif_socials_behance = get_theme_mod('zerif_socials_behance','#');
@@ -50,7 +51,7 @@
 			if(!empty($zerif_phone) || !empty($zerif_phone_icon)):
 				$footer_sections++;
 			endif;
-			if( !empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) ||
+			if( !empty($zerif_socials_facebook) || !empty($zerif_socials_googleplus) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) ||
 			!empty($zerif_copyright) || !empty($zerif_socials_instagram) ):
 				$footer_sections++;
 			endif;
@@ -96,7 +97,9 @@
 
 						if( !empty($zerif_email_icon) ) {
 							echo '<div class="icon-top green-text">';
+							echo '<a href="mailto:info@huongdandulichvietnam.com">';
 								echo '<img src="'.esc_url($zerif_email_icon).'" alt="" />';
+							echo '</a>';
 							echo '</div>';
 						}
 						if( !empty($zerif_email) ) {
@@ -115,7 +118,9 @@
 					echo '<div class="'.$footer_class.' company-details">';
 						if( !empty($zerif_phone_icon) ) {
 							echo '<div class="icon-top blue-text">';
+							echo '<a href="tel:(+84)122 7106 094">';
 								echo '<img src="'.esc_url($zerif_phone_icon).'" alt="" />';
+							echo '</a>';
 							echo '</div>';
 						}
 						if( !empty($zerif_phone) ) {
@@ -132,16 +137,20 @@
 			// open link in a new tab when checkbox "accessibility" is not ticked
 			$attribut_new_tab = (isset($zerif_accessibility) && ($zerif_accessibility != 1) ? ' target="_blank"' : '' );
 
-			if( !empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) ||
+			if( !empty($zerif_socials_facebook) || !empty($zerif_socials_googleplus) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) ||
 			!empty($zerif_copyright) || !empty($zerif_socials_instagram) ):
 
 						echo '<div class="'.$footer_class.' copyright">';
-						if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble)):
+						if(!empty($zerif_socials_facebook) || !empty($zerif_socials_googleplus) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble)):
 							echo '<ul class="social">';
 
 							/* facebook */
 							if( !empty($zerif_socials_facebook) ):
 								echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_facebook).'"><i class="fa fa-facebook"></i></a></li>';
+							endif;
+							/* Google Plus */
+							if( !empty($zerif_socials_googleplus) ):
+								echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_googleplus).'"><i class="fa fa-googleplus"></i></a></li>';
 							endif;
 							/* twitter */
 							if( !empty($zerif_socials_twitter) ):

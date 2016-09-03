@@ -270,7 +270,7 @@ $customizer_url = admin_url() . 'customize.php' ;
 		
 		<!-- Revive Old Post -->
 		<h4><?php esc_html_e( 'Revive Old Post', 'zerif-lite' ); ?></h4>
-		<p><?php esc_html_e( 'A plugin to share about your old posts on twitter, facebook, linkedin to get more hits for them and keep them alive.', 'zerif-lite' ); ?></p>
+		<p><?php esc_html_e( 'A plugin to share about your old posts on twitter, facebook, googple plus, linkedin to get more hits for them and keep them alive.', 'zerif-lite' ); ?></p>
 
 		<?php if ( is_plugin_active( 'tweet-old-post/tweet-old-post.php' ) ) { ?>
 

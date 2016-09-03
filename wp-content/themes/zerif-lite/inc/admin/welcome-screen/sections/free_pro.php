@@ -123,7 +123,6 @@
             <tr>
                 <td>
                     <h3><?php esc_html_e( 'No credit footer link','zerif-lite' ); ?></h3>
-                    <p><?php esc_html_e( 'Remove "Zerif Lite powered by WordPress" copyright from the footer.','zerif-lite' ); ?></p>
                 </td>
                 <td><span class="dashicons-before dashicons-no-alt"></span></td>
                 <td><span class="dashicons-before dashicons-yes"></span></td>

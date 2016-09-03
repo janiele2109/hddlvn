@@ -944,6 +944,10 @@ msgstr "Descripción"
 msgid "Facebook link"
 msgstr "Enlace de Facebook"
 
+#: functions.php:1035 inc/customizer.php:171 inc/customizer.php:932
+msgid "Google Plus link"
+msgstr "Enlace de Google Plus"
+
 #: functions.php:1040 inc/customizer.php:179 inc/customizer.php:340
 msgid "Twitter link"
 msgstr "Enlace de Twitter"

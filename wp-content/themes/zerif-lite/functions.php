@@ -583,25 +583,25 @@ function zerif_register_default_widgets() {
 
         /* our team widget #1 */
         $active_widgets[ 'sidebar-ourteam' ][0] = 'zerif_team-widget-' . $zerif_lite_counter;
-        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'ASHLEY SIMMONS', 'position' => 'Project Manager', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team1.png" );
+        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'ASHLEY SIMMONS', 'position' => 'Project Manager', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'gp_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team1.png" );
         update_option( 'widget_zerif_team-widget', $ourteam_content );
         $zerif_lite_counter++;
 
         /* our team widget #2 */
         $active_widgets[ 'sidebar-ourteam' ][] = 'zerif_team-widget-' . $zerif_lite_counter;
-        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'TIMOTHY SPRAY', 'position' => 'Art Director', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team2.png" );
+        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'TIMOTHY SPRAY', 'position' => 'Art Director', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'gp_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team2.png" );
         update_option( 'widget_zerif_team-widget', $ourteam_content );
         $zerif_lite_counter++;
 
         /* our team widget #3 */
         $active_widgets[ 'sidebar-ourteam' ][] = 'zerif_team-widget-' . $zerif_lite_counter;
-        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'TONYA GARCIA', 'position' => 'Account Manager', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team3.png" );
+        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'TONYA GARCIA', 'position' => 'Account Manager', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'gp_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team3.png" );
         update_option( 'widget_zerif_team-widget', $ourteam_content );
         $zerif_lite_counter++;
 
         /* our team widget #4 */
         $active_widgets[ 'sidebar-ourteam' ][] = 'zerif_team-widget-' . $zerif_lite_counter;
-        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'JASON LANE', 'position' => 'Business Development', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team4.png" );
+        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'JASON LANE', 'position' => 'Business Development', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'gp_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team4.png" );
         update_option( 'widget_zerif_team-widget', $ourteam_content );
         $zerif_lite_counter++;
 
@@ -1092,6 +1092,11 @@ class zerif_team_widget extends WP_Widget{
                                         class="fa fa-facebook"></i></a></li>
                         <?php endif; ?>
 
+                        <?php if ( !empty($instance['gp_link']) ): ?>
+                            <li><a href="<?php echo apply_filters('widget_title', $instance['gp_link']); ?>" target="<?php echo $zerif_team_target; ?>"><i
+                                        class="fa fa-google-plus"></i></a></li>
+                        <?php endif; ?>
+
                         <?php if ( !empty($instance['tw_link']) ): ?>
                             <li><a href="<?php echo apply_filters('widget_title', $instance['tw_link']); ?>" target="<?php echo $zerif_team_target; ?>"><i
                                         class="fa fa-twitter"></i></a></li>
@@ -1142,6 +1147,7 @@ class zerif_team_widget extends WP_Widget{
         $instance['position'] = stripslashes(wp_filter_post_kses($new_instance['position']));
         $instance['description'] = stripslashes(wp_filter_post_kses($new_instance['description']));
         $instance['fb_link'] = strip_tags($new_instance['fb_link']);
+        $instance['gp_link'] = strip_tags($new_instance['gp_link']);
         $instance['tw_link'] = strip_tags($new_instance['tw_link']);
         $instance['bh_link'] = strip_tags($new_instance['bh_link']);
         $instance['db_link'] = strip_tags($new_instance['db_link']);
@@ -1176,6 +1182,11 @@ class zerif_team_widget extends WP_Widget{
         <p>
             <label for="<?php echo $this->get_field_id('fb_link'); ?>"><?php _e('Facebook link', 'zerif-lite'); ?></label><br/>
             <input type="text" name="<?php echo $this->get_field_name('fb_link'); ?>" id="<?php echo $this->get_field_id('fb_link'); ?>" value="<?php if( !empty($instance['fb_link']) ): echo $instance['fb_link']; endif; ?>" class="widefat">
+
+        </p>
+        <p>
+            <label for="<?php echo $this->get_field_id('gp_link'); ?>"><?php _e('Google Plus link', 'zerif-lite'); ?></label><br/>
+            <input type="text" name="<?php echo $this->get_field_name('gp_link'); ?>" id="<?php echo $this->get_field_id('gp_link'); ?>" value="<?php if( !empty($instance['gp_link']) ): echo $instance['gp_link']; endif; ?>" class="widefat">
 
         </p>
         <p>

@@ -300,9 +300,9 @@ function zerif_our_team_header_title_function() {
 	$zerif_ourteam_title = get_theme_mod('zerif_ourteam_title',__('YOUR TEAM','zerif-lite'));
 
 	if( !empty($zerif_ourteam_title) ):
-		echo '<h2 class="dark-text">'.wp_kses_post( $zerif_ourteam_title ).'</h2>';
+		echo '<h2 class="white-text">'.wp_kses_post( $zerif_ourteam_title ).'</h2>';
 	elseif ( is_customize_preview() ):
-		echo '<h2 class="dark-text zerif_hidden_if_not_customizer"></h2>';
+		echo '<h2 class="white-text zerif_hidden_if_not_customizer"></h2>';
 	endif;
 }
 
@@ -357,11 +357,11 @@ function zerif_latest_news_header_title_function() {
 
 	if( !empty($zerif_latestnews_title) ):
 
-		echo '<h2 class="dark-text">' . wp_kses_post( $zerif_latestnews_title ) . '</h2>';
+		echo '<h2 class="white-text">' . wp_kses_post( $zerif_latestnews_title ) . '</h2>';
 
 	else:
 
-		echo '<h2 class="dark-text">' . __('Latest news','zerif-lite') . '</h2>';
+		echo '<h2 class="white-text">' . __('Latest news','zerif-lite') . '</h2>';
 
 	endif;
 }
@@ -372,11 +372,11 @@ function zerif_latest_news_header_subtitle_function() {
 
 	if( !empty($zerif_latestnews_subtitle) ):
 
-		echo '<div class="dark-text section-legend">'.wp_kses_post( $zerif_latestnews_subtitle ).'</div>';
+		echo '<div class="white-text section-legend">'.wp_kses_post( $zerif_latestnews_subtitle ).'</div>';
 
 	elseif ( is_customize_preview() ):
 
-		echo '<div class="dark-text section-legend zerif_hidden_if_not_customizer"></div>';
+		echo '<div class="white-text section-legend zerif_hidden_if_not_customizer"></div>';
 
 	endif;
 }
@@ -417,9 +417,9 @@ function zerif_about_us_header_title_function() {
 	$zerif_aboutus_title = get_theme_mod('zerif_aboutus_title',__('About','zerif-lite'));
 
 	if( !empty($zerif_aboutus_title) ):
-		echo '<h2 class="white-text">'. wp_kses_post( $zerif_aboutus_title ) .'</h2>';
+		echo '<h2 class="dark-text">'. wp_kses_post( $zerif_aboutus_title ) .'</h2>';
 	elseif ( is_customize_preview() ):
-		echo '<h2 class="white-text zerif_hidden_if_not_customizer"></h2>';
+		echo '<h2 class="dark-text zerif_hidden_if_not_customizer"></h2>';
 	endif;
 }
 
@@ -428,7 +428,7 @@ function zerif_about_us_header_subtitle_function() {
 
 	if( !empty($zerif_aboutus_subtitle) ):
 
-		echo '<div class="white-text section-legend">';
+		echo '<div class="dark-text section-legend">';
 
 		echo wp_kses_post( $zerif_aboutus_subtitle );
 
@@ -436,7 +436,7 @@ function zerif_about_us_header_subtitle_function() {
 
 	elseif ( is_customize_preview() ):
 
-		echo '<div class="white-text section-legend zerif_hidden_if_not_customizer">'.wp_kses_post( $zerif_aboutus_subtitle ).'</div>';
+		echo '<div class="dark-text section-legend zerif_hidden_if_not_customizer">'.wp_kses_post( $zerif_aboutus_subtitle ).'</div>';
 
 	endif;
 }
