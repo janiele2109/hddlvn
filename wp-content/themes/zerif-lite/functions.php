@@ -1077,50 +1077,6 @@ class zerif_team_widget extends WP_Widget{
 
                 </div>
 
-                <div class="social-icons">
-
-                    <ul>
-                        <?php
-                            $zerif_team_target = '_self';
-                            if( !empty($instance['open_new_window']) ):
-                                $zerif_team_target = '_blank';
-                            endif;
-                        ?>
-
-                        <?php if ( !empty($instance['fb_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['fb_link']); ?>" target="<?php echo $zerif_team_target; ?>"><i
-                                        class="fa fa-facebook"></i></a></li>
-                        <?php endif; ?>
-
-                        <?php if ( !empty($instance['gp_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['gp_link']); ?>" target="<?php echo $zerif_team_target; ?>"><i
-                                        class="fa fa-google-plus"></i></a></li>
-                        <?php endif; ?>
-
-                        <?php if ( !empty($instance['tw_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['tw_link']); ?>" target="<?php echo $zerif_team_target; ?>"><i
-                                        class="fa fa-twitter"></i></a></li>
-                        <?php endif; ?>
-
-                        <?php if ( !empty($instance['bh_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['bh_link']); ?>" target="<?php echo $zerif_team_target; ?>"><i
-                                        class="fa fa-behance"></i></a></li>
-                        <?php endif; ?>
-
-                        <?php if ( !empty($instance['db_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['db_link']); ?>" target="<?php echo $zerif_team_target; ?>"><i
-                                        class="fa fa-dribbble"></i></a></li>
-                        <?php endif; ?>
-						
-						<?php if ( !empty($instance['ln_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['ln_link']); ?>" target="<?php echo $zerif_team_target; ?>"><i
-                                        class="fa fa-linkedin"></i></a></li>
-                        <?php endif; ?>
-
-                    </ul>
-
-                </div>
-
 				<?php if( !empty($instance['description']) ): ?>
                 <div class="details">
 

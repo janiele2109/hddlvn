@@ -2290,7 +2290,7 @@ width: -webkit-calc(100% / 4);
 	float: none;
 	margin-top: 0;
 	margin-bottom: 0;
-	font-size: 15px;
+	font-size: 17px;
 	padding-top:10px;
 	font-family: 'Pridi', serif;
 }
@@ -3029,6 +3029,7 @@ width: -webkit-calc(100% / 4);
 	display: inline-block;
 	margin-top:0px;
 	margin-right: 20px;
+	margin-left: 20px;
 }
 .social li a {
 	color: #939393;
@@ -3040,7 +3041,7 @@ width: -webkit-calc(100% / 4);
 .copyright p {
 	margin-bottom: 0;
 	color: #939393;
-	font-size: 14px;
+	font-size: 13px;
 }
 .footer-widget-wrap > .container {
 	text-align: center;

@@ -2,16 +2,9 @@ Port from remote web server to localhost
 
 1. Add the following line:
 
-	DROP DATABASE IF EXISTS `hddlvn`;
+	DROP DATABASE IF EXISTS `jangerte_hddlvn`;
 
-2. Change DB name:
-
-	From
-		vanphon2_wp333
-	to
-		hddlvn
-		
-3. Change domain:
+2. Change domain:
 
 	From 
 		huongdandulichvietnam.com 
@@ -29,3 +22,8 @@ Port from remote web server to localhost
 		/home/vanphon2/public_html/hddlvn.com/
 	to
 		C:\wamp64\www\hddlvn\
+        
+    From 
+        /home2/jangerte/public_html/hddlvn/
+    to
+        C:\wamp64\www\hddlvn\
