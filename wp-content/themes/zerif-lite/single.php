@@ -13,7 +13,7 @@ get_header(); ?>
 
 	<div class="container">
 		<?php zerif_before_single_post_trigger(); ?>
-		<div class="content-left-wrap col-md-9">
+		<div class="content-left-wrap col-md-12">
 			<?php zerif_top_single_post_trigger(); ?>
 			<div id="primary" class="content-area">
 				<main itemscope itemtype="http://schema.org/WebPageElement" itemprop="mainContentOfPage" id="main" class="site-main">

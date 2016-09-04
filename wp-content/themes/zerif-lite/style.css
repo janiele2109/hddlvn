@@ -793,7 +793,6 @@ a:active {
 }
 .site-main .post-navigation {
 	float: left;
-	width: 100%;
 }
  /*---------------------------------------
  **   6.0 Accessibility                   -----
@@ -6426,5 +6425,11 @@ ul#menu-vi_menu li ul {
     transition-property: opacity, visibility;
     transition-duration: .4s, 0s;
     transition-delay: 0s, .4s;
+}
+
+.col-md-12 {
+	width: 80%!important;
+	margin-left:10%;
+	margin-right:10%;
 }
 /* Xuyen - ADD - END */
