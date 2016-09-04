@@ -171,6 +171,10 @@ class Walker_Nav_Menu extends Walker {
 						'href' === $attr &&
 						esc_url( $value ) == "http://hddlvn.com/vi/lien-he/")
 						$value = esc_url( "#contact" );
+					elseif( $currentLink == "http://hddlvn.com/vi/" &&
+						'href' === $attr &&
+						esc_url( $value ) == "http://hddlvn.com")
+						$value = esc_url( "#home" );
 					else
 						$value = esc_url( $value );
 				// Xuyen - MOD - END
