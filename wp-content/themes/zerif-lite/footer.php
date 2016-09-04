@@ -150,7 +150,7 @@
 							endif;
 							/* Google Plus */
 							if( !empty($zerif_socials_googleplus) ):
-								echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_googleplus).'"><i class="fa fa-googleplus"></i></a></li>';
+								echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_googleplus).'"><i class="fa fa-google-plus"></i></a></li>';
 							endif;
 							/* twitter */
 							if( !empty($zerif_socials_twitter) ):
@@ -180,8 +180,6 @@
 						elseif( is_customize_preview() ):
 							echo '<p id="zerif-copyright" class="zerif_hidden_if_not_customizer"></p>';
 						endif;
-
-						echo '<div class="zerif-copyright-box"><a class="zerif-copyright" href="http://themeisle.com/themes/zerif-lite/"'.$attribut_new_tab.' rel="nofollow">Zerif Lite </a>'.__('powered by','zerif-lite').'<a class="zerif-copyright" href="http://wordpress.org/"'.$attribut_new_tab.' rel="nofollow"> WordPress</a></div>';
 
 						echo '</div>';
 
