@@ -15,8 +15,7 @@ Port from remote web server to localhost
 
 		"info@huongdandulichvietnam.com" at entry "(833, 'theme_mods_vogue',..." table "wpwn_options"
 
-
-4. Change dir:
+3. Change dir:
 
 	From 
 		/home/vanphon2/public_html/hddlvn.com/
@@ -27,3 +26,27 @@ Port from remote web server to localhost
         /home2/jangerte/public_html/hddlvn/
     to
         C:\wamp64\www\hddlvn\
+        
+        
+Port from remote web localhost to remote server
+
+1. Comment following lines:
+
+    -- DROP DATABASE IF EXISTS `jangerte_hddlvn`;
+    
+    -- /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+    -- /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+    -- /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+    -- /*!40101 SET NAMES utf8mb4 */;
+    
+    -- /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+    -- /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+    -- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+    
+
+2. Change domain:
+
+	From 
+		hddlvn.com 
+	to 
+		huongdandulichvietnam.com
