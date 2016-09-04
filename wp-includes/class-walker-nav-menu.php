@@ -160,7 +160,21 @@ class Walker_Nav_Menu extends Walker {
 		$attributes = '';
 		foreach ( $atts as $attr => $value ) {
 			if ( ! empty( $value ) ) {
-				$value = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
+				// Xuyen - MOD - START
+				// $value = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
+				$currentLink = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";				
+				
+				if ( 'href' !== $attr )
+					$value = esc_attr( $value );
+				else
+					if( $currentLink == "http://hddlvn.com/vi/" &&
+						'href' === $attr &&
+						esc_url( $value ) == "http://hddlvn.com/vi/lien-he/")
+						$value = esc_url( "#contact" );
+					else
+						$value = esc_url( $value );
+				// Xuyen - MOD - END
+
 				$attributes .= ' ' . $attr . '="' . $value . '"';
 			}
 		}

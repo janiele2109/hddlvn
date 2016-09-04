@@ -320,7 +320,7 @@ function zerif_scripts() {
     }
 
     /* Xuyen - ADD - START */
-    /* wp_enqueue_script('my_script', get_template_directory_uri() . '/js/my_scripts.js', array("jquery"), '20120206', true); */
+    wp_enqueue_script('my_script', get_template_directory_uri() . '/js/my_scripts.js', array("jquery"), '20120206', true);
     /* Xuyen - ADD - END */
 
 	add_editor_style('/css/custom-editor-style.css');
