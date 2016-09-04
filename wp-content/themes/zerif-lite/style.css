@@ -3028,11 +3028,12 @@ width: -webkit-calc(100% / 4);
 }
 .social li {
 	display: inline-block;
-	margin: 5px;
+	margin-top:0px;
+	margin-right: 20px;
 }
 .social li a {
 	color: #939393;
-	font-size: 18px;
+	font-size: 48px;
 }
 .social li a:hover {
 	color: #e96656;
@@ -3040,6 +3041,7 @@ width: -webkit-calc(100% / 4);
 .copyright p {
 	margin-bottom: 0;
 	color: #939393;
+	font-size: 14px;
 }
 .footer-widget-wrap > .container {
 	text-align: center;
