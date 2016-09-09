@@ -1223,6 +1223,7 @@ a:active {
 }
 .wp-caption .wp-caption-text {
 	margin: 0.8075em 0;
+	text-align: center;
 }
 .site-main .gallery {
 	margin-bottom: 1.5em;
