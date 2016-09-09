@@ -18,7 +18,7 @@
     margin: 0 auto 12px;
     color: #777;
     position: absolute;
-    right: 25px;
+    right: 20px;
     top: 45px;
 }
 
@@ -34,17 +34,17 @@
 
 .woocommerce .woocommerce-result-count,
 .woocommerce-page .woocommerce-result-count {
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.015);
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.08);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     display: block;
     width: 50%;
     float: left;
     margin: 10px 0 30px;
-    padding: 15px 0 16px;
+    padding: 16px 0;
 }
 .woocommerce .woocommerce-ordering,
 .woocommerce-page .woocommerce-ordering {
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.015);
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.08);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     display: block;
     width: 50%;
@@ -782,6 +782,10 @@
         box-shadow: none;
         width: 100%;
         float: none;
+    }
+    .woocommerce .woocommerce-breadcrumb,
+    .woocommerce-page .woocommerce-breadcrumb {
+        right: 0;
     }
     
     .woocommerce .widget-area,

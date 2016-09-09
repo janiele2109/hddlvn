@@ -78,7 +78,7 @@ elseif ( get_theme_mod( 'vogue-slider-type', false ) == 'vogue-meta-slider' ) : 
                             <h3>
                                 <?php _e( 'Highly Customizable', 'vogue' ); ?>
                             </h3>
-                            <p><?php _e( 'Integrated with WooCommerce, SiteOrigin\'s Page Builder, Comtact Form 7 and more...', 'vogue' ); ?></p>
+                            <p><?php _e( 'Integrated with WooCommerce, SiteOrigin\'s Page Builder, Contact Form 7 and more...', 'vogue' ); ?></p>
                         </div>
                     </div>
                     

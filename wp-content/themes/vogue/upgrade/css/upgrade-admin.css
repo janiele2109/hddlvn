@@ -100,6 +100,33 @@ a.upgrade-page-link:hover {
 	margin: 0 0 32px;
 }
 
+.upgrade-changelog {
+	
+}
+.upgrade-changelog h4 {
+	border-top: 1px dashed #bbb;
+	max-width: 480px;
+	margin: 0 auto;
+	padding: 12px 0 0;
+	font-size: 20px;
+	font-weight: 400;
+	color: #000;
+}
+.upgrade-changelog ul {
+	border-top: 1px dashed #bbb;
+	border-bottom: 1px dashed #bbb;
+	padding: 10px 0;
+	max-width: 480px;
+	margin: 15px auto;
+}
+.upgrade-changelog ul li {
+	color: #7d7d7d;
+}
+.upgrade-changelog ul li:hover {
+	color: #000;
+	font-weight: 600;
+}
+
 .upgrade-page-left {
 	min-height: 40px;
 	float: left;

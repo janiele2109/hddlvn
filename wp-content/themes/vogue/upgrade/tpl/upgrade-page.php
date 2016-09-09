@@ -15,7 +15,7 @@
             </div>
             
             <div class="upgrade-help">
-                <p><?php printf( __( 'We support all our themes, offering one on one email support to help you beild the website you want', 'vogue' ) ); ?></p>
+                <p><?php printf( __( 'We support all our themes, offering one on one email support to help you build the website you want', 'vogue' ) ); ?></p>
                 <p><?php printf( __( 'While we do support our both free and premium themes... <strong>Premium themes get prioritized support</strong>', 'vogue' ) ); ?></p>
             </div>
             
@@ -27,6 +27,22 @@
             
             <div class="upgrade-help">
                 <p><?php printf( __( '<a href="https://kairaweb.com/support/install-the-premium-theme/" target="_blank">Get help here</a> on purchasing and installing Vogue Premium', 'vogue' ) ); ?></p>
+            </div>
+            
+            <div class="upgrade-changelog">
+                <h4><?php printf( __( 'Latest features added to Vogue Premium', 'vogue' ) ); ?></h4>
+                <ul>
+                    <li><?php printf( __( 'NEW Blog Layout - Masonry grid layout', 'vogue' ) ); ?></li>
+                    <li><?php printf( __( 'Select Plain or Block styling for Grid Layout', 'vogue' ) ); ?></li>
+                    <li><?php printf( __( 'Set maximum width for logo - Useful for Retina logos', 'vogue' ) ); ?></li>
+                    <li><?php printf( __( 'Set blog list and archive pages to full width', 'vogue' ) ); ?></li>
+                    <li><?php printf( __( 'Setsearch results page full width', 'vogue' ) ); ?></li>
+                    <li><?php printf( __( 'Set blog single pages full width', 'vogue' ) ); ?></li>
+                    <li><?php printf( __( 'Set site title font size', 'vogue' ) ); ?></li>
+                    <li><?php printf( __( 'Set site tagline font size', 'vogue' ) ); ?></li>
+                    <li><?php printf( __( 'Center align page titles', 'vogue' ) ); ?></li>
+                    <li><?php printf( __( 'Added 6 new social icons', 'vogue' ) ); ?></li>
+                </ul>
             </div>
             
         </div>
@@ -48,7 +64,7 @@
             <h3 class="upgrade-page-sub-title"><?php _e( 'Continued Updates', 'vogue' ); ?></h3>
             <div class="upgrade-page-left-box">
                 <div class="upgrade-page-left-box-left">
-                    <?php printf( __( "Once you upgrade to vogue Premium, you'll then support and move over to our premium updates system which will ensure vogue works with all future versions of WordPress that are released.", 'vogue' ) ); ?>
+                    <?php printf( __( "Once you upgrade to Vogue Premium, you'll then support and move over to our premium updates system which will ensure vogue works with all future versions of WordPress that are released.", 'vogue' ) ); ?>
                 </div>
                 <div class="upgrade-page-left-box-right">
                     <img src="<?php echo get_template_directory_uri(); ?>/upgrade/images/upgrade-updates.png" alt="<?php _e( 'Continued Updates', 'vogue' ); ?>" />
@@ -59,7 +75,7 @@
             <h3 class="upgrade-page-sub-title"><?php _e( 'Get Premium Support', 'vogue' ); ?></h3>
             <div class="upgrade-page-left-box">
                 <div class="upgrade-page-left-box-left">
-                    <?php printf( __( "Upgrading to vogue Premium will also give you prioritized support, ensuring we get to your queries first.<br /><br />We have a growing <a href='https://kairaweb.com/documentation/' target='_blank'>support forum</a> on our website as well as <a href='https://kairaweb.com/support-contact/' target='_blank'>email support</a> to sort out any queries you may have.", 'vogue' ) ); ?>
+                    <?php printf( __( "Upgrading to Vogue Premium will also give you prioritized support, ensuring we get to your queries first.<br /><br />We have a growing <a href='https://kairaweb.com/documentation/' target='_blank'>support forum</a> on our website as well as <a href='https://kairaweb.com/support-contact/' target='_blank'>email support</a> to sort out any queries you may have.", 'vogue' ) ); ?>
                 </div>
                 <div class="upgrade-page-left-box-right">
                     <img src="<?php echo get_template_directory_uri(); ?>/upgrade/images/upgrade-support.png" alt="<?php _e( 'Get Premium Support', 'vogue' ); ?>" />

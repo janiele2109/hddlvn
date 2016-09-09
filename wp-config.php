@@ -23,10 +23,10 @@
 define('DB_NAME', 'jangerte_hddlvn');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'jangerte_db_hddl');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'trieu123456');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

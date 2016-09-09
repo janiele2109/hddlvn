@@ -219,11 +219,8 @@ abstract class PLL_Choose_Lang {
 		// test referer in case PLL_COOKIE is set to false
 		// thanks to Ov3rfly http://wordpress.org/support/topic/enhance-feature-when-front-page-is-visited-set-language-according-to-browser
 		$language = $this->options['hide_default'] && ( ( isset( $_SERVER['HTTP_REFERER'] ) && in_array( parse_url( $_SERVER['HTTP_REFERER'], PHP_URL_HOST ), $this->links_model->get_hosts() ) ) || ! $this->options['browser'] ) ?
-			// Xuyen - MOD - START
-			// $this->model->get_language( $this->options['default_lang'] ) :
-			// $this->get_preferred_language(); // sets the language according to browser preference or default language
-			'vi' : 'vi';
-			// Xuyen - MOD - END
+			$this->model->get_language( $this->options['default_lang'] ) :
+			$this->get_preferred_language(); // sets the language according to browser preference or default language
 		$this->set_language( $language );
 	}
 

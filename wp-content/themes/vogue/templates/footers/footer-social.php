@@ -14,14 +14,6 @@
 				    echo '<a href="skype:' . esc_html( get_theme_mod( 'vogue-social-skype' ) ) . '?userinfo" title="' . __( 'Contact Us on Skype', 'vogue' ) . '" class="footer-social-icon footer-social-skype"><i class="fa fa-skype"></i></a>';
 				endif;
 
-				if ( get_theme_mod( 'vogue-social-facebook', false ) ) :
-				    echo '<a href="' . esc_url( get_theme_mod( 'vogue-social-facebook' ) ) . '" target="_blank" title="' . __( 'Find Us on Facebook', 'vogue' ) . '" class="footer-social-icon footer-social-facebook"><i class="fa fa-facebook"></i></a>';
-				endif;
-
-				if ( get_theme_mod( 'vogue-social-google-plus', false ) ) :
-				    echo '<a href="' . esc_url( get_theme_mod( 'vogue-social-google-plus' ) ) . '" target="_blank" title="' . __( 'Find Us on Google Plus', 'vogue' ) . '" class="footer-social-icon footer-social-google-plus"><i class="fa fa-google-plus"></i></a>';
-				endif;
-
 				if ( get_theme_mod( 'vogue-social-linkedin', false ) ) :
 				    echo '<a href="' . esc_url( get_theme_mod( 'vogue-social-linkedin' ) ) . '" target="_blank" title="' . __( 'Find Us on LinkedIn', 'vogue' ) . '" class="footer-social-icon footer-social-linkedin"><i class="fa fa-linkedin"></i></a>';
 				endif;
@@ -46,6 +38,8 @@
 			<?php endif; ?>
 			
         	<div class="site-footer-social-ad"><i class="fa fa-map-marker"></i> <?php echo wp_kses_post( get_theme_mod( 'vogue-website-site-add', __( 'Cape Town, South Africa', 'vogue' ) ) ) ?>
+        	
+			<?php printf( __( '</div><div class="site-footer-social-copy">Theme: %1$s by %2$s', 'vogue' ), 'Vogue', '<a href="https://kairaweb.com/">Kaira</a></div><div class="clearboth"></div>' ); ?>
         </div>
     </div>
     
@@ -57,7 +51,11 @@
 	
 		<div class="site-container">
 			
+			<?php do_action ( 'vogue_footer_bottombar_left' ); ?>
+			
 	        <?php wp_nav_menu( array( 'theme_location' => 'footer-bar','container' => false, 'fallback_cb' => false, 'depth'  => 1 ) ); ?>
+	        
+	        <?php do_action ( 'vogue_footer_bottombar_right' ); ?>
                 
 	    </div>
 		

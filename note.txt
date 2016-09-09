@@ -34,8 +34,6 @@ Port from remote web localhost to remote server
 
     -- DROP DATABASE IF EXISTS `jangerte_hddlvn`;
     
-    -- CREATE DATABASE IF NOT EXISTS `jangerte_hddlvn` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-    
     -- /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
     -- /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
     -- /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -52,11 +50,3 @@ Port from remote web localhost to remote server
 		hddlvn.com 
 	to 
 		huongdandulichvietnam.com
-
-3. Change dir:
-
-    From 
-        C:wamp64wwwhddlvn
-    to
-        /home2/jangerte/public_html/hddlvn/
-     

@@ -45,3 +45,4 @@
 [14-Aug-2016 17:17:51 UTC] PHP Warning:  array_unshift() expects parameter 1 to be array, string given in /home/vanphon2/public_html/huongdandulichvietnam.com/wp-includes/class-wp-xmlrpc-server.php on line 596
 [14-Aug-2016 18:51:03 UTC] PHP Warning:  array_unshift() expects parameter 1 to be array, string given in /home/vanphon2/public_html/huongdandulichvietnam.com/wp-includes/class-wp-xmlrpc-server.php on line 596
 [14-Aug-2016 20:43:11 UTC] PHP Warning:  array_unshift() expects parameter 1 to be array, string given in /home/vanphon2/public_html/huongdandulichvietnam.com/wp-includes/class-wp-xmlrpc-server.php on line 596
+[07-Sep-2016 05:46:43 America/Chicago] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0

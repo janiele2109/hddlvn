@@ -1,24 +1,22 @@
 /*--------------------------------------------------------------
 Vogue - Header Standard Styling
 --------------------------------------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Sriracha&subset=latin,vietnamese);
 
 .site-title {
     margin: 0;
     padding: 0 0 12px;
     font-size: 72px;
-    line-height: 64px;
+    line-height: 1.2em;
     font-weight: 300;
 }
 .site-description {
     margin: 0;
     padding: 0 0 14px;
-    font-size: 17px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 1.2em;
     font-weight: 300;
     text-transform: uppercase;
     color: inherit;
-    font-family: 'Sriracha';
 }
 
 #primary-menu,
@@ -51,7 +49,7 @@ a.header-cart-contents {
 .menu-search {
     display: inline-block;
     margin: 0 0 0 5px;
-    vertical-align: middle;
+    vertical-align: bottom;
     font-size: 15px;
 }
 .search-btn {
@@ -230,7 +228,7 @@ a.header-cart-contents {
         text-align: center;
     }
     .site-topbar-left {
-        
+        padding: 2px 0 2px;
     }
     .site-topbar-left .menu {
         display: inline-block;
@@ -274,7 +272,7 @@ a.header-cart-contents {
     }
     .site-description {
         font-size: 12px;
-        padding: 0 0 5px;
+        padding: 0 0 8px;
     }
     
     .header-cart {

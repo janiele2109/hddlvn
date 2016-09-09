@@ -16,7 +16,7 @@ Tags: one-column, two-columns, right-sidebar,front-page-post-form,full-width-tem
 /*--------------------------------------------------------------
 1.0 - Reset
 --------------------------------------------------------------*/
-@import 'https://fonts.googleapis.com/css?family=Lobster|Sriracha|Farsan|Arima+Madurai|Cormorant+Upright|Pridi';
+@import 'https://fonts.googleapis.com/css?family=Lobster|Sriracha|Farsan|Arima+Madurai|Cormorant+Upright|Pridi|Roboto+Condensed|Baloo+Bhai';
 
 html {
 	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
@@ -102,7 +102,8 @@ a img {
 	border: 0;
 }
 body {
-	font-family: 'Lato', Helvetica, sans-serif !important;
+	font-family: Arial, sans-serif !important;
+	/* font-family: 'Lato', Helvetica, sans-serif !important; */
 	font-size: 14px;
 	color: #808080;
 	font-weight: normal;
@@ -337,6 +338,7 @@ h6 {
 	color: #FFF !important;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	font-size: 18px;
 }
 .blue-btn:hover {
 	color: #FFF;
@@ -465,11 +467,13 @@ thead th{
 }
 .dark-text {
 	color: #404040;
-	font-family: 'Sriracha', cursive;	
+	font-family: Arial, sans-serif;
+	/* font-family: 'Sriracha', cursive; */
 }
 .white-text {
 	color: #FFFFFF;
-	font-family: 'Sriracha', cursive;
+	font-family: Arial, sans-serif;
+	/* font-family: 'Sriracha', cursive; */
 }
 /*---------------------------------------
  **   BORDER BOTTOMS                 -----
@@ -1048,6 +1052,10 @@ a:active {
 }
 .entry-title{
 	position: relative;
+	font-size: 30px;
+	margin-top: 0;
+	padding-top: 0;
+	line-height:40px!important;
 }
 .entry-title:before {
 	position: absolute;
@@ -1372,10 +1380,13 @@ object {
 	margin-bottom: 0;
 }
 .section-header .section-legend {
-	font-size: 16px;
+	font-size: 18px !important;
 	margin-bottom: 0;
+	margin-top: 6px;
 	padding-top: 0;
-	font-family: 'Sriracha', cursive;
+ 	font-family: Arial, sans-serif;
+	font-style: italic;
+	/* font-family: 'Sriracha', cursive; */
 	color: #FFFFFF;
 }
 /* PRE LOADER */
@@ -1694,22 +1705,25 @@ ul.nav > li.current_page_item.current > a:before {
 	float:none;
 }
 .intro-text{
-	font-family: 'Lobster', cursive;
+	font-family: Arial, sans-serif;
+	/* font-family: 'Lobster', cursive; */
 	text-align: center;
 	color: #FFF;
-	line-height: 65px;
+	line-height: 90px!important;
 	z-index: 0;
-	font-size: 80px;
+	font-size: 68px;
 	float:none;
 }
 /* Xuyen - ADD - START */
 .janie-slogan-text{
-	font-family: 'Sriracha', cursive;
+	font-family: Arial, sans-serif;
+	font-style: italic;
+	/* font-family: 'Sriracha', cursive; */
 	text-align: center;
 	color: #FFF;
 	line-height: 65px;
 	z-index: 0;
-	font-size: 30px;
+	font-size: 25px;
 	float:none;
 }
 /* Xuyen - ADD - END */
@@ -1741,6 +1755,10 @@ ul.nav > li.current_page_item.current > a:before {
 	font-size: 14px;
 	line-height: 18px;
 	color: #FFFFFF;
+}
+
+.latesnews-content p{
+	text-align:justify;
 }
 #carousel-homepage-latestnews .carousel-inner .item .latestnews-title {
 	margin-bottom: 15px;
@@ -1899,14 +1917,15 @@ ul.nav > li.current_page_item.current > a:before {
 	text-transform: uppercase;
 	margin-bottom: 30px;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 13px;
 	float: none;
-    width: auto;
-    background: none;
+    	width: auto;
+    	background: none;
 }
 .focus-box p {
 	font-size: 14px;
 	color: #808080;
+	text-align:justify;
 }
 /*----OTHER FOCUSES ----*/
 .other-focuses {
@@ -2236,10 +2255,11 @@ width: -webkit-calc(100% / 4);
 .about-us .big-intro {
 	text-align: right;
 	font-weight: 300;
-	font-size: 60px;
+	font-size: 70px;
 	line-height: normal;
 	margin-top: -15px;
-	font-family: 'Cormorant Upright', serif;
+	font-family: Arial, sans-serif;
+	/* font-family: 'Cormorant Upright', serif; */
 }
 .about-us .section-header .section-legend {
 	color: #404040;
@@ -2249,7 +2269,8 @@ width: -webkit-calc(100% / 4);
 	color: #BF5555;
 	font-size: 16px;
 	line-height: 25px;
-	font-family: 'Arima Madurai', cursive;
+	font-family: Arial, sans-serif;
+	/* font-family: 'Arima Madurai', cursive; */
 }
 .about-us .column {
 	margin-bottom: 78px;
@@ -2292,7 +2313,8 @@ width: -webkit-calc(100% / 4);
 	margin-bottom: 0;
 	font-size: 17px;
 	padding-top:10px;
-	font-family: 'Pridi', serif;
+	font-family: Arial, sans-serif;
+	/* font-family: 'Pridi', serif; */
 }
 .skills .skill p {
 	line-height: 20px;
@@ -2481,7 +2503,8 @@ width: -webkit-calc(100% / 4);
 	color: #FFFFFF;
 	font-weight: 700;
 	font-size: 25px;
-	font-family: 'Farsan', cursive;
+ 	font-family: Arial, sans-serif;
+	/* font-family: 'Farsan', cursive; */
 	font-style: italic;
 	position: relative;
 	margin-top: 15px;
@@ -3203,7 +3226,6 @@ article .posted-on a:hover{
 .entry-title a,
 .widget-title,
 .widget-title a{
-	font-size: 20px;
 	line-height: 22px;
 	color: #404040;
 }
@@ -3270,11 +3292,6 @@ article .posted-on a:hover{
 }
 .listpost-content-wrap-full .list-post-top{
 	min-height: 1px;
-}
-.entry-title{
-	font-size: 20px;
-	margin-top: 0;
-	padding-top: 0;
 }
 .listpost-content-wrap .entry-content {
 	margin-top: 1em;
@@ -6420,6 +6437,14 @@ ul#menu-vi_menu > li:hover ul {
     transition-delay: 0.1s, 0.1s;
 }
 
+ul#menu-vi_menu{
+    font-family: Arial, sans-serif;
+}
+
+ul#menu-vi_menu li a{
+    font-size:16px;
+}
+
 ul#menu-vi_menu li ul {
     visibility: hidden;
     opacity: 0;
@@ -6432,5 +6457,8 @@ ul#menu-vi_menu li ul {
 	width: 80%!important;
 	margin-left:10%;
 	margin-right:10%;
+}
+.member-details h3{
+	font-size: 19px;
 }
 /* Xuyen - ADD - END */
