@@ -1,0 +1,21 @@
+{
+	"laxcomma" : true,
+	"latedef"  : true,
+	"browser"  : true,
+	"eqnull"   : true,
+	"curly"    : true,
+	"undef"    : true,
+	"noarg"    : true,
+	"immed"    : true,
+	"expr"     : true,
+	"sub"      : true,
+	"globals"  : {
+		"Handlebars" : true,
+		"JOGARMAIS"  : true,
+		"console"    : true,
+		"jQuery"     : true,
+		"Toastr"     : true,
+		"SSB"        : true,
+		"$"          : true
+	}
+}

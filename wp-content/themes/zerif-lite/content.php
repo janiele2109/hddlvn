@@ -90,7 +90,7 @@
 
 			<span class="cat-links">
 
-				<?php printf( __( 'Posted in %1$s', 'zerif-lite' ), $categories_list ); ?>
+				<?php printf( __( 'Được đăng trong mục %1$s', 'zerif-lite' ), $categories_list ); ?>
 
 			</span>
 
@@ -118,7 +118,7 @@
 
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'zerif-lite' ), __( '1 Comment', 'zerif-lite' ), __( '% Comments', 'zerif-lite' ) ); ?></span>
+		<span class="comments-link"><?php comments_popup_link( __( 'Để lại lời bình', 'zerif-lite' ), __( '1 Comment', 'zerif-lite' ), __( '% Comments', 'zerif-lite' ) ); ?></span>
 
 		<?php endif; ?>
 
